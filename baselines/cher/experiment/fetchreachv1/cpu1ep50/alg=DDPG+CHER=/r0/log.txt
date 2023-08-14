@@ -1,0 +1,692 @@
+Logging to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0
+T: 50
+_Q_lr: 0.001
+_action_l2: 1.0
+_batch_size: 64
+_buffer_size: 1000000
+_clip_obs: 200.0
+_hidden: 256
+_layers: 3
+_max_u: 1.0
+_network_class: baselines.her.actor_critic:ActorCritic
+_norm_clip: 5
+_norm_eps: 0.01
+_pi_lr: 0.001
+_polyak: 0.95
+_relative_goals: False
+_scope: ddpg
+ddpg_params: {'pi_lr': 0.001, 'Q_lr': 0.001, 'buffer_size': 1000000, 'relative_goals': False, 'norm_clip': 5, 'network_class': 'baselines.her.actor_critic:ActorCritic', 'norm_eps': 0.01, 'clip_obs': 200.0, 'action_l2': 1.0, 'layers': 3, 'hidden': 256, 'batch_size': 64, 'polyak': 0.95, 'scope': 'ddpg', 'max_u': 1.0}
+env_name: FetchReach-v1
+gamma: 0.98
+make_env: <function prepare_params.<locals>.make_env at 0x7ff70e428730>
+n_batches: 40
+n_cycles: 50
+n_test_rollouts: 10
+noise_eps: 0.2
+random_eps: 0.3
+replay_k: 4
+replay_strategy: future
+rollout_batch_size: 2
+test_with_polyak: False
+Creating a DDPG agent with action space 4 x 1.0...
+Training...
+------------------------------------
+| epoch              | 0           |
+| stats_g/mean       | 0.8679002   |
+| stats_g/std        | 0.10157045  |
+| stats_o/mean       | 0.26087052  |
+| stats_o/std        | 0.034696933 |
+| test/episode       | 20.0        |
+| test/mean_Q        | -0.25607607 |
+| test/success_rate  | 1.0         |
+| train/episode      | 100.0       |
+| train/success_rate | 0.68        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+Saving periodic policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_0.pkl ...
+------------------------------------
+| epoch              | 1           |
+| stats_g/mean       | 0.8706326   |
+| stats_g/std        | 0.094193906 |
+| stats_o/mean       | 0.26143453  |
+| stats_o/std        | 0.033260066 |
+| test/episode       | 40.0        |
+| test/mean_Q        | -0.09993915 |
+| test/success_rate  | 1.0         |
+| train/episode      | 200.0       |
+| train/success_rate | 0.83        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+------------------------------------
+| epoch              | 2           |
+| stats_g/mean       | 0.8736083   |
+| stats_g/std        | 0.09191582  |
+| stats_o/mean       | 0.26223814  |
+| stats_o/std        | 0.032833375 |
+| test/episode       | 60.0        |
+| test/mean_Q        | -0.09456693 |
+| test/success_rate  | 1.0         |
+| train/episode      | 300.0       |
+| train/success_rate | 0.83        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 3            |
+| stats_g/mean       | 0.8742042    |
+| stats_g/std        | 0.09081914   |
+| stats_o/mean       | 0.2623884    |
+| stats_o/std        | 0.032735225  |
+| test/episode       | 80.0         |
+| test/mean_Q        | -0.082243994 |
+| test/success_rate  | 1.0          |
+| train/episode      | 400.0        |
+| train/success_rate | 0.87         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+------------------------------------
+| epoch              | 4           |
+| stats_g/mean       | 0.875622    |
+| stats_g/std        | 0.090159275 |
+| stats_o/mean       | 0.2627985   |
+| stats_o/std        | 0.03263197  |
+| test/episode       | 100.0       |
+| test/mean_Q        | -0.02727496 |
+| test/success_rate  | 1.0         |
+| train/episode      | 500.0       |
+| train/success_rate | 0.84        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 5            |
+| stats_g/mean       | 0.87524563   |
+| stats_g/std        | 0.089227     |
+| stats_o/mean       | 0.26268095   |
+| stats_o/std        | 0.03241408   |
+| test/episode       | 120.0        |
+| test/mean_Q        | -0.045611467 |
+| test/success_rate  | 1.0          |
+| train/episode      | 600.0        |
+| train/success_rate | 0.85         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+Saving periodic policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_5.pkl ...
+-------------------------------------
+| epoch              | 6            |
+| stats_g/mean       | 0.8756359    |
+| stats_g/std        | 0.08896041   |
+| stats_o/mean       | 0.26277754   |
+| stats_o/std        | 0.0323655    |
+| test/episode       | 140.0        |
+| test/mean_Q        | -0.049941648 |
+| test/success_rate  | 1.0          |
+| train/episode      | 700.0        |
+| train/success_rate | 0.88         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 7            |
+| stats_g/mean       | 0.87512773   |
+| stats_g/std        | 0.08852456   |
+| stats_o/mean       | 0.26260898   |
+| stats_o/std        | 0.03224386   |
+| test/episode       | 160.0        |
+| test/mean_Q        | -0.059545003 |
+| test/success_rate  | 1.0          |
+| train/episode      | 800.0        |
+| train/success_rate | 0.8          |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 8            |
+| stats_g/mean       | 0.8757244    |
+| stats_g/std        | 0.08810756   |
+| stats_o/mean       | 0.26274648   |
+| stats_o/std        | 0.032132175  |
+| test/episode       | 180.0        |
+| test/mean_Q        | -0.047765713 |
+| test/success_rate  | 1.0          |
+| train/episode      | 900.0        |
+| train/success_rate | 0.86         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+------------------------------------
+| epoch              | 9           |
+| stats_g/mean       | 0.8769863   |
+| stats_g/std        | 0.08796847  |
+| stats_o/mean       | 0.26311153  |
+| stats_o/std        | 0.032116067 |
+| test/episode       | 200.0       |
+| test/mean_Q        | -0.07963977 |
+| test/success_rate  | 1.0         |
+| train/episode      | 1000.0      |
+| train/success_rate | 0.79        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+------------------------------------
+| epoch              | 10          |
+| stats_g/mean       | 0.87654525  |
+| stats_g/std        | 0.08747464  |
+| stats_o/mean       | 0.2629865   |
+| stats_o/std        | 0.031982377 |
+| test/episode       | 220.0       |
+| test/mean_Q        | -0.067889   |
+| test/success_rate  | 1.0         |
+| train/episode      | 1100.0      |
+| train/success_rate | 0.8         |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+Saving periodic policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_10.pkl ...
+-------------------------------------
+| epoch              | 11           |
+| stats_g/mean       | 0.87674373   |
+| stats_g/std        | 0.087085724  |
+| stats_o/mean       | 0.26302963   |
+| stats_o/std        | 0.031877637  |
+| test/episode       | 240.0        |
+| test/mean_Q        | -0.035360985 |
+| test/success_rate  | 1.0          |
+| train/episode      | 1200.0       |
+| train/success_rate | 0.85         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 12           |
+| stats_g/mean       | 0.87722063   |
+| stats_g/std        | 0.08696342   |
+| stats_o/mean       | 0.26317447   |
+| stats_o/std        | 0.03185613   |
+| test/episode       | 260.0        |
+| test/mean_Q        | -0.051443152 |
+| test/success_rate  | 1.0          |
+| train/episode      | 1300.0       |
+| train/success_rate | 0.79         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 13           |
+| stats_g/mean       | 0.8765684    |
+| stats_g/std        | 0.08665123   |
+| stats_o/mean       | 0.26298484   |
+| stats_o/std        | 0.03175483   |
+| test/episode       | 280.0        |
+| test/mean_Q        | -0.062241323 |
+| test/success_rate  | 1.0          |
+| train/episode      | 1400.0       |
+| train/success_rate | 0.82         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 14           |
+| stats_g/mean       | 0.8766198    |
+| stats_g/std        | 0.08667601   |
+| stats_o/mean       | 0.2629968    |
+| stats_o/std        | 0.03174878   |
+| test/episode       | 300.0        |
+| test/mean_Q        | -0.047585495 |
+| test/success_rate  | 1.0          |
+| train/episode      | 1500.0       |
+| train/success_rate | 0.84         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 15           |
+| stats_g/mean       | 0.87700105   |
+| stats_g/std        | 0.08662081   |
+| stats_o/mean       | 0.26312086   |
+| stats_o/std        | 0.031744253  |
+| test/episode       | 320.0        |
+| test/mean_Q        | -0.058756076 |
+| test/success_rate  | 1.0          |
+| train/episode      | 1600.0       |
+| train/success_rate | 0.84         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+Saving periodic policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_15.pkl ...
+-------------------------------------
+| epoch              | 16           |
+| stats_g/mean       | 0.87631655   |
+| stats_g/std        | 0.0864146    |
+| stats_o/mean       | 0.2629198    |
+| stats_o/std        | 0.0316889    |
+| test/episode       | 340.0        |
+| test/mean_Q        | -0.067427345 |
+| test/success_rate  | 1.0          |
+| train/episode      | 1700.0       |
+| train/success_rate | 0.75         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+------------------------------------
+| epoch              | 17          |
+| stats_g/mean       | 0.8762199   |
+| stats_g/std        | 0.086577974 |
+| stats_o/mean       | 0.26290023  |
+| stats_o/std        | 0.031725902 |
+| test/episode       | 360.0       |
+| test/mean_Q        | -0.05696885 |
+| test/success_rate  | 1.0         |
+| train/episode      | 1800.0      |
+| train/success_rate | 0.83        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+------------------------------------
+| epoch              | 18          |
+| stats_g/mean       | 0.87605304  |
+| stats_g/std        | 0.08653068  |
+| stats_o/mean       | 0.26285735  |
+| stats_o/std        | 0.031708598 |
+| test/episode       | 380.0       |
+| test/mean_Q        | -0.08648245 |
+| test/success_rate  | 1.0         |
+| train/episode      | 1900.0      |
+| train/success_rate | 0.81        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 19           |
+| stats_g/mean       | 0.8760896    |
+| stats_g/std        | 0.08659973   |
+| stats_o/mean       | 0.26286352   |
+| stats_o/std        | 0.03172595   |
+| test/episode       | 400.0        |
+| test/mean_Q        | -0.084366195 |
+| test/success_rate  | 1.0          |
+| train/episode      | 2000.0       |
+| train/success_rate | 0.81         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+------------------------------------
+| epoch              | 20          |
+| stats_g/mean       | 0.87619525  |
+| stats_g/std        | 0.08641365  |
+| stats_o/mean       | 0.2629042   |
+| stats_o/std        | 0.03167566  |
+| test/episode       | 420.0       |
+| test/mean_Q        | -0.07483061 |
+| test/success_rate  | 1.0         |
+| train/episode      | 2100.0      |
+| train/success_rate | 0.77        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+Saving periodic policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_20.pkl ...
+------------------------------------
+| epoch              | 21          |
+| stats_g/mean       | 0.8760064   |
+| stats_g/std        | 0.08620476  |
+| stats_o/mean       | 0.2628438   |
+| stats_o/std        | 0.03162519  |
+| test/episode       | 440.0       |
+| test/mean_Q        | -0.11257911 |
+| test/success_rate  | 1.0         |
+| train/episode      | 2200.0      |
+| train/success_rate | 0.73        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+------------------------------------
+| epoch              | 22          |
+| stats_g/mean       | 0.8759009   |
+| stats_g/std        | 0.0859829   |
+| stats_o/mean       | 0.26281673  |
+| stats_o/std        | 0.031570245 |
+| test/episode       | 460.0       |
+| test/mean_Q        | -0.07199346 |
+| test/success_rate  | 1.0         |
+| train/episode      | 2300.0      |
+| train/success_rate | 0.79        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+------------------------------------
+| epoch              | 23          |
+| stats_g/mean       | 0.87579274  |
+| stats_g/std        | 0.08596251  |
+| stats_o/mean       | 0.26279074  |
+| stats_o/std        | 0.0315711   |
+| test/episode       | 480.0       |
+| test/mean_Q        | -0.06384675 |
+| test/success_rate  | 1.0         |
+| train/episode      | 2400.0      |
+| train/success_rate | 0.78        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 24           |
+| stats_g/mean       | 0.8759422    |
+| stats_g/std        | 0.08590873   |
+| stats_o/mean       | 0.2628367    |
+| stats_o/std        | 0.03155742   |
+| test/episode       | 500.0        |
+| test/mean_Q        | -0.053012453 |
+| test/success_rate  | 1.0          |
+| train/episode      | 2500.0       |
+| train/success_rate | 0.73         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+------------------------------------
+| epoch              | 25          |
+| stats_g/mean       | 0.8757231   |
+| stats_g/std        | 0.085758924 |
+| stats_o/mean       | 0.26276493  |
+| stats_o/std        | 0.03152368  |
+| test/episode       | 520.0       |
+| test/mean_Q        | -0.06513713 |
+| test/success_rate  | 1.0         |
+| train/episode      | 2600.0      |
+| train/success_rate | 0.74        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+Saving periodic policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_25.pkl ...
+------------------------------------
+| epoch              | 26          |
+| stats_g/mean       | 0.8757036   |
+| stats_g/std        | 0.085740454 |
+| stats_o/mean       | 0.26275745  |
+| stats_o/std        | 0.031526245 |
+| test/episode       | 540.0       |
+| test/mean_Q        | -0.0748193  |
+| test/success_rate  | 1.0         |
+| train/episode      | 2700.0      |
+| train/success_rate | 0.78        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 27           |
+| stats_g/mean       | 0.87567514   |
+| stats_g/std        | 0.085701495  |
+| stats_o/mean       | 0.26275507   |
+| stats_o/std        | 0.031520758  |
+| test/episode       | 560.0        |
+| test/mean_Q        | -0.047311746 |
+| test/success_rate  | 1.0          |
+| train/episode      | 2800.0       |
+| train/success_rate | 0.84         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 28           |
+| stats_g/mean       | 0.87551326   |
+| stats_g/std        | 0.08577799   |
+| stats_o/mean       | 0.26271197   |
+| stats_o/std        | 0.031538885  |
+| test/episode       | 580.0        |
+| test/mean_Q        | -0.062835276 |
+| test/success_rate  | 1.0          |
+| train/episode      | 2900.0       |
+| train/success_rate | 0.82         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 29           |
+| stats_g/mean       | 0.87555784   |
+| stats_g/std        | 0.085772     |
+| stats_o/mean       | 0.2627189    |
+| stats_o/std        | 0.03154154   |
+| test/episode       | 600.0        |
+| test/mean_Q        | -0.076284125 |
+| test/success_rate  | 1.0          |
+| train/episode      | 3000.0       |
+| train/success_rate | 0.81         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 30           |
+| stats_g/mean       | 0.87569827   |
+| stats_g/std        | 0.085815646  |
+| stats_o/mean       | 0.26276118   |
+| stats_o/std        | 0.031555638  |
+| test/episode       | 620.0        |
+| test/mean_Q        | -0.038597293 |
+| test/success_rate  | 1.0          |
+| train/episode      | 3100.0       |
+| train/success_rate | 0.71         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+Saving periodic policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_30.pkl ...
+-------------------------------------
+| epoch              | 31           |
+| stats_g/mean       | 0.87577146   |
+| stats_g/std        | 0.08595562   |
+| stats_o/mean       | 0.26278275   |
+| stats_o/std        | 0.03159033   |
+| test/episode       | 640.0        |
+| test/mean_Q        | -0.075006604 |
+| test/success_rate  | 1.0          |
+| train/episode      | 3200.0       |
+| train/success_rate | 0.84         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 32           |
+| stats_g/mean       | 0.8759386    |
+| stats_g/std        | 0.08593633   |
+| stats_o/mean       | 0.26282382   |
+| stats_o/std        | 0.03158238   |
+| test/episode       | 660.0        |
+| test/mean_Q        | -0.056109488 |
+| test/success_rate  | 1.0          |
+| train/episode      | 3300.0       |
+| train/success_rate | 0.79         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 33           |
+| stats_g/mean       | 0.8760001    |
+| stats_g/std        | 0.08591157   |
+| stats_o/mean       | 0.26283807   |
+| stats_o/std        | 0.03156752   |
+| test/episode       | 680.0        |
+| test/mean_Q        | -0.078634456 |
+| test/success_rate  | 1.0          |
+| train/episode      | 3400.0       |
+| train/success_rate | 0.75         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 34           |
+| stats_g/mean       | 0.8759482    |
+| stats_g/std        | 0.085995376  |
+| stats_o/mean       | 0.262822     |
+| stats_o/std        | 0.03159222   |
+| test/episode       | 700.0        |
+| test/mean_Q        | -0.082856245 |
+| test/success_rate  | 1.0          |
+| train/episode      | 3500.0       |
+| train/success_rate | 0.74         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+------------------------------------
+| epoch              | 35          |
+| stats_g/mean       | 0.87618804  |
+| stats_g/std        | 0.08607707  |
+| stats_o/mean       | 0.26289386  |
+| stats_o/std        | 0.031619042 |
+| test/episode       | 720.0       |
+| test/mean_Q        | -0.07050923 |
+| test/success_rate  | 1.0         |
+| train/episode      | 3600.0      |
+| train/success_rate | 0.83        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+Saving periodic policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_35.pkl ...
+-------------------------------------
+| epoch              | 36           |
+| stats_g/mean       | 0.8761465    |
+| stats_g/std        | 0.08603602   |
+| stats_o/mean       | 0.26287976   |
+| stats_o/std        | 0.0316113    |
+| test/episode       | 740.0        |
+| test/mean_Q        | -0.032761164 |
+| test/success_rate  | 1.0          |
+| train/episode      | 3700.0       |
+| train/success_rate | 0.8          |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 37           |
+| stats_g/mean       | 0.8761949    |
+| stats_g/std        | 0.086000025  |
+| stats_o/mean       | 0.26289615   |
+| stats_o/std        | 0.031600736  |
+| test/episode       | 760.0        |
+| test/mean_Q        | -0.063667074 |
+| test/success_rate  | 1.0          |
+| train/episode      | 3800.0       |
+| train/success_rate | 0.82         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+------------------------------------
+| epoch              | 38          |
+| stats_g/mean       | 0.8760455   |
+| stats_g/std        | 0.08591994  |
+| stats_o/mean       | 0.2628531   |
+| stats_o/std        | 0.03157442  |
+| test/episode       | 780.0       |
+| test/mean_Q        | -0.07754032 |
+| test/success_rate  | 1.0         |
+| train/episode      | 3900.0      |
+| train/success_rate | 0.83        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 39           |
+| stats_g/mean       | 0.875918     |
+| stats_g/std        | 0.085924886  |
+| stats_o/mean       | 0.26281667   |
+| stats_o/std        | 0.031572245  |
+| test/episode       | 800.0        |
+| test/mean_Q        | -0.040247045 |
+| test/success_rate  | 1.0          |
+| train/episode      | 4000.0       |
+| train/success_rate | 0.74         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+------------------------------------
+| epoch              | 40          |
+| stats_g/mean       | 0.8758957   |
+| stats_g/std        | 0.08591167  |
+| stats_o/mean       | 0.2628091   |
+| stats_o/std        | 0.031572167 |
+| test/episode       | 820.0       |
+| test/mean_Q        | -0.07102541 |
+| test/success_rate  | 1.0         |
+| train/episode      | 4100.0      |
+| train/success_rate | 0.83        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+Saving periodic policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_40.pkl ...
+------------------------------------
+| epoch              | 41          |
+| stats_g/mean       | 0.87598103  |
+| stats_g/std        | 0.08588284  |
+| stats_o/mean       | 0.2628326   |
+| stats_o/std        | 0.031562008 |
+| test/episode       | 840.0       |
+| test/mean_Q        | -0.06039272 |
+| test/success_rate  | 1.0         |
+| train/episode      | 4200.0      |
+| train/success_rate | 0.83        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 42           |
+| stats_g/mean       | 0.87607056   |
+| stats_g/std        | 0.08592945   |
+| stats_o/mean       | 0.26286024   |
+| stats_o/std        | 0.031564634  |
+| test/episode       | 860.0        |
+| test/mean_Q        | -0.053293176 |
+| test/success_rate  | 1.0          |
+| train/episode      | 4300.0       |
+| train/success_rate | 0.79         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+------------------------------------
+| epoch              | 43          |
+| stats_g/mean       | 0.87607074  |
+| stats_g/std        | 0.085903496 |
+| stats_o/mean       | 0.2628619   |
+| stats_o/std        | 0.031552028 |
+| test/episode       | 880.0       |
+| test/mean_Q        | -0.06417774 |
+| test/success_rate  | 1.0         |
+| train/episode      | 4400.0      |
+| train/success_rate | 0.76        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 44           |
+| stats_g/mean       | 0.87583923   |
+| stats_g/std        | 0.0859933    |
+| stats_o/mean       | 0.26279902   |
+| stats_o/std        | 0.03157463   |
+| test/episode       | 900.0        |
+| test/mean_Q        | -0.046868514 |
+| test/success_rate  | 1.0          |
+| train/episode      | 4500.0       |
+| train/success_rate | 0.79         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-------------------------------------
+| epoch              | 45           |
+| stats_g/mean       | 0.8758385    |
+| stats_g/std        | 0.0859054    |
+| stats_o/mean       | 0.2628006    |
+| stats_o/std        | 0.03155209   |
+| test/episode       | 920.0        |
+| test/mean_Q        | -0.061615504 |
+| test/success_rate  | 1.0          |
+| train/episode      | 4600.0       |
+| train/success_rate | 0.84         |
+-------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+Saving periodic policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_45.pkl ...
+------------------------------------
+| epoch              | 46          |
+| stats_g/mean       | 0.8756667   |
+| stats_g/std        | 0.085893124 |
+| stats_o/mean       | 0.26275086  |
+| stats_o/std        | 0.031549968 |
+| test/episode       | 940.0       |
+| test/mean_Q        | -0.08024837 |
+| test/success_rate  | 1.0         |
+| train/episode      | 4700.0      |
+| train/success_rate | 0.88        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+------------------------------------
+| epoch              | 47          |
+| stats_g/mean       | 0.87555677  |
+| stats_g/std        | 0.0858789   |
+| stats_o/mean       | 0.26271975  |
+| stats_o/std        | 0.031544525 |
+| test/episode       | 960.0       |
+| test/mean_Q        | -0.07494993 |
+| test/success_rate  | 1.0         |
+| train/episode      | 4800.0      |
+| train/success_rate | 0.85        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+-----------------------------------
+| epoch              | 48         |
+| stats_g/mean       | 0.87551814 |
+| stats_g/std        | 0.08584788 |
+| stats_o/mean       | 0.26270717 |
+| stats_o/std        | 0.03153298 |
+| test/episode       | 980.0      |
+| test/mean_Q        | -0.0749431 |
+| test/success_rate  | 1.0        |
+| train/episode      | 4900.0     |
+| train/success_rate | 0.77       |
+-----------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...
+------------------------------------
+| epoch              | 49          |
+| stats_g/mean       | 0.87547237  |
+| stats_g/std        | 0.08587427  |
+| stats_o/mean       | 0.26269874  |
+| stats_o/std        | 0.031539813 |
+| test/episode       | 1000.0      |
+| test/mean_Q        | -0.05491336 |
+| test/success_rate  | 1.0         |
+| train/episode      | 5000.0      |
+| train/success_rate | 0.84        |
+------------------------------------
+New best success rate: 1.0. Saving policy to fetchreachv1/cpu1ep50/alg=DDPG+CHER=/r0/policy_best.pkl ...

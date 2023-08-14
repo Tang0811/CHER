@@ -1,0 +1,655 @@
+Logging to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1
+T: 50
+_Q_lr: 0.001
+_action_l2: 1.0
+_batch_size: 64
+_buffer_size: 1000000
+_clip_obs: 200.0
+_hidden: 256
+_layers: 3
+_max_u: 1.0
+_network_class: baselines.her.actor_critic:ActorCritic
+_norm_clip: 5
+_norm_eps: 0.01
+_pi_lr: 0.001
+_polyak: 0.95
+_relative_goals: False
+_scope: ddpg
+ddpg_params: {'batch_size': 64, 'norm_eps': 0.01, 'hidden': 256, 'max_u': 1.0, 'layers': 3, 'polyak': 0.95, 'relative_goals': False, 'pi_lr': 0.001, 'scope': 'ddpg', 'network_class': 'baselines.her.actor_critic:ActorCritic', 'buffer_size': 1000000, 'norm_clip': 5, 'action_l2': 1.0, 'Q_lr': 0.001, 'clip_obs': 200.0}
+env_name: HandReach-v0
+gamma: 0.98
+make_env: <function prepare_params.<locals>.make_env at 0x7fb580d93598>
+n_batches: 40
+n_cycles: 50
+n_test_rollouts: 10
+noise_eps: 0.2
+random_eps: 0.3
+replay_k: 4
+replay_strategy: future
+rollout_batch_size: 2
+test_with_polyak: False
+Creating a DDPG agent with action space 20 x 1.0...
+Training...
+------------------------------------
+| epoch              | 0           |
+| stats_g/mean       | 0.6728045   |
+| stats_g/std        | 0.019444585 |
+| stats_o/mean       | 0.30694425  |
+| stats_o/std        | 0.6922046   |
+| test/episode       | 20.0        |
+| test/mean_Q        | -2.789928   |
+| test/success_rate  | 0.0         |
+| train/episode      | 100.0       |
+| train/success_rate | 0.0         |
+------------------------------------
+New best success rate: 0.0. Saving policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_best.pkl ...
+Saving periodic policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_0.pkl ...
+------------------------------------
+| epoch              | 1           |
+| stats_g/mean       | 0.6742509   |
+| stats_g/std        | 0.019208562 |
+| stats_o/mean       | 0.30547562  |
+| stats_o/std        | 0.7357866   |
+| test/episode       | 40.0        |
+| test/mean_Q        | -2.119048   |
+| test/success_rate  | 0.0         |
+| train/episode      | 200.0       |
+| train/success_rate | 0.0         |
+------------------------------------
+New best success rate: 0.0. Saving policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_best.pkl ...
+------------------------------------
+| epoch              | 2           |
+| stats_g/mean       | 0.6741972   |
+| stats_g/std        | 0.018739318 |
+| stats_o/mean       | 0.302813    |
+| stats_o/std        | 0.77043176  |
+| test/episode       | 60.0        |
+| test/mean_Q        | -1.8474518  |
+| test/success_rate  | 0.075       |
+| train/episode      | 300.0       |
+| train/success_rate | 0.0         |
+------------------------------------
+New best success rate: 0.075. Saving policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_best.pkl ...
+--------------------------------------------
+| epoch              | 3                   |
+| stats_g/mean       | 0.67418015          |
+| stats_g/std        | 0.01842019          |
+| stats_o/mean       | 0.30280218          |
+| stats_o/std        | 0.78602856          |
+| test/episode       | 80.0                |
+| test/mean_Q        | -2.007764           |
+| test/success_rate  | 0.13999999999999999 |
+| train/episode      | 400.0               |
+| train/success_rate | 0.003               |
+--------------------------------------------
+New best success rate: 0.13999999999999999. Saving policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_best.pkl ...
+--------------------------------------------
+| epoch              | 4                   |
+| stats_g/mean       | 0.67427576          |
+| stats_g/std        | 0.01816914          |
+| stats_o/mean       | 0.3022893           |
+| stats_o/std        | 0.79449296          |
+| test/episode       | 100.0               |
+| test/mean_Q        | -2.3161802          |
+| test/success_rate  | 0.21000000000000002 |
+| train/episode      | 500.0               |
+| train/success_rate | 0.01                |
+--------------------------------------------
+New best success rate: 0.21000000000000002. Saving policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_best.pkl ...
+------------------------------------
+| epoch              | 5           |
+| stats_g/mean       | 0.6743914   |
+| stats_g/std        | 0.017964114 |
+| stats_o/mean       | 0.30241174  |
+| stats_o/std        | 0.7993892   |
+| test/episode       | 120.0       |
+| test/mean_Q        | -2.6575432  |
+| test/success_rate  | 0.165       |
+| train/episode      | 600.0       |
+| train/success_rate | 0.003       |
+------------------------------------
+Saving periodic policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_5.pkl ...
+------------------------------------
+| epoch              | 6           |
+| stats_g/mean       | 0.6745236   |
+| stats_g/std        | 0.017779535 |
+| stats_o/mean       | 0.30224434  |
+| stats_o/std        | 0.8010246   |
+| test/episode       | 140.0       |
+| test/mean_Q        | -2.9874582  |
+| test/success_rate  | 0.325       |
+| train/episode      | 700.0       |
+| train/success_rate | 0.004       |
+------------------------------------
+New best success rate: 0.325. Saving policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_best.pkl ...
+------------------------------------
+| epoch              | 7           |
+| stats_g/mean       | 0.67463315  |
+| stats_g/std        | 0.017669078 |
+| stats_o/mean       | 0.30292648  |
+| stats_o/std        | 0.8008598   |
+| test/episode       | 160.0       |
+| test/mean_Q        | -4.284941   |
+| test/success_rate  | 0.145       |
+| train/episode      | 800.0       |
+| train/success_rate | 0.012       |
+------------------------------------
+------------------------------------
+| epoch              | 8           |
+| stats_g/mean       | 0.6747614   |
+| stats_g/std        | 0.017622035 |
+| stats_o/mean       | 0.30348077  |
+| stats_o/std        | 0.80025655  |
+| test/episode       | 180.0       |
+| test/mean_Q        | -3.8641677  |
+| test/success_rate  | 0.2         |
+| train/episode      | 900.0       |
+| train/success_rate | 0.006       |
+------------------------------------
+-----------------------------------
+| epoch              | 9          |
+| stats_g/mean       | 0.6748818  |
+| stats_g/std        | 0.01758894 |
+| stats_o/mean       | 0.30388007 |
+| stats_o/std        | 0.7998804  |
+| test/episode       | 200.0      |
+| test/mean_Q        | -4.1674104 |
+| test/success_rate  | 0.185      |
+| train/episode      | 1000.0     |
+| train/success_rate | 0.005      |
+-----------------------------------
+-----------------------------------
+| epoch              | 10         |
+| stats_g/mean       | 0.67492557 |
+| stats_g/std        | 0.01752991 |
+| stats_o/mean       | 0.30396992 |
+| stats_o/std        | 0.8000144  |
+| test/episode       | 220.0      |
+| test/mean_Q        | -5.176477  |
+| test/success_rate  | 0.375      |
+| train/episode      | 1100.0     |
+| train/success_rate | 0.006      |
+-----------------------------------
+New best success rate: 0.375. Saving policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_best.pkl ...
+Saving periodic policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_10.pkl ...
+------------------------------------
+| epoch              | 11          |
+| stats_g/mean       | 0.6749147   |
+| stats_g/std        | 0.017415663 |
+| stats_o/mean       | 0.30391872  |
+| stats_o/std        | 0.7998184   |
+| test/episode       | 240.0       |
+| test/mean_Q        | -5.5834823  |
+| test/success_rate  | 0.25        |
+| train/episode      | 1200.0      |
+| train/success_rate | 0.009       |
+------------------------------------
+---------------------------------------------
+| epoch              | 12                   |
+| stats_g/mean       | 0.67488563           |
+| stats_g/std        | 0.017334666          |
+| stats_o/mean       | 0.303821             |
+| stats_o/std        | 0.7991293            |
+| test/episode       | 260.0                |
+| test/mean_Q        | -6.1626225           |
+| test/success_rate  | 0.5349999999999999   |
+| train/episode      | 1300.0               |
+| train/success_rate | 0.014000000000000002 |
+---------------------------------------------
+New best success rate: 0.5349999999999999. Saving policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_best.pkl ...
+------------------------------------
+| epoch              | 13          |
+| stats_g/mean       | 0.67490184  |
+| stats_g/std        | 0.017301193 |
+| stats_o/mean       | 0.30361897  |
+| stats_o/std        | 0.7987416   |
+| test/episode       | 280.0       |
+| test/mean_Q        | -5.2117457  |
+| test/success_rate  | 0.52        |
+| train/episode      | 1400.0      |
+| train/success_rate | 0.016       |
+------------------------------------
+------------------------------------
+| epoch              | 14          |
+| stats_g/mean       | 0.67491066  |
+| stats_g/std        | 0.017260497 |
+| stats_o/mean       | 0.30355468  |
+| stats_o/std        | 0.79871494  |
+| test/episode       | 300.0       |
+| test/mean_Q        | -7.181395   |
+| test/success_rate  | 0.55        |
+| train/episode      | 1500.0      |
+| train/success_rate | 0.01        |
+------------------------------------
+New best success rate: 0.55. Saving policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_best.pkl ...
+---------------------------------------------
+| epoch              | 15                   |
+| stats_g/mean       | 0.6749009            |
+| stats_g/std        | 0.017229706          |
+| stats_o/mean       | 0.30313665           |
+| stats_o/std        | 0.79794264           |
+| test/episode       | 320.0                |
+| test/mean_Q        | -7.98046             |
+| test/success_rate  | 0.67                 |
+| train/episode      | 1600.0               |
+| train/success_rate | 0.013000000000000001 |
+---------------------------------------------
+New best success rate: 0.67. Saving policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_best.pkl ...
+Saving periodic policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_15.pkl ...
+-------------------------------------------
+| epoch              | 16                 |
+| stats_g/mean       | 0.6748507          |
+| stats_g/std        | 0.0171608          |
+| stats_o/mean       | 0.3026134          |
+| stats_o/std        | 0.7973777          |
+| test/episode       | 340.0              |
+| test/mean_Q        | -7.571042          |
+| test/success_rate  | 0.6050000000000001 |
+| train/episode      | 1700.0             |
+| train/success_rate | 0.009              |
+-------------------------------------------
+-------------------------------------------
+| epoch              | 17                 |
+| stats_g/mean       | 0.6748371          |
+| stats_g/std        | 0.01711062         |
+| stats_o/mean       | 0.3022418          |
+| stats_o/std        | 0.7963621          |
+| test/episode       | 360.0              |
+| test/mean_Q        | -9.270334          |
+| test/success_rate  | 0.4600000000000001 |
+| train/episode      | 1800.0             |
+| train/success_rate | 0.01               |
+-------------------------------------------
+---------------------------------------------
+| epoch              | 18                   |
+| stats_g/mean       | 0.67479306           |
+| stats_g/std        | 0.017063413          |
+| stats_o/mean       | 0.30198708           |
+| stats_o/std        | 0.79543054           |
+| test/episode       | 380.0                |
+| test/mean_Q        | -8.092968            |
+| test/success_rate  | 0.725                |
+| train/episode      | 1900.0               |
+| train/success_rate | 0.015000000000000003 |
+---------------------------------------------
+New best success rate: 0.725. Saving policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_best.pkl ...
+-------------------------------------------
+| epoch              | 19                 |
+| stats_g/mean       | 0.674775           |
+| stats_g/std        | 0.017038617        |
+| stats_o/mean       | 0.3017934          |
+| stats_o/std        | 0.79505384         |
+| test/episode       | 400.0              |
+| test/mean_Q        | -9.19005           |
+| test/success_rate  | 0.6700000000000002 |
+| train/episode      | 2000.0             |
+| train/success_rate | 0.009              |
+-------------------------------------------
+-----------------------------------
+| epoch              | 20         |
+| stats_g/mean       | 0.674801   |
+| stats_g/std        | 0.01702666 |
+| stats_o/mean       | 0.3016156  |
+| stats_o/std        | 0.79446673 |
+| test/episode       | 420.0      |
+| test/mean_Q        | -9.590879  |
+| test/success_rate  | 0.71       |
+| train/episode      | 2100.0     |
+| train/success_rate | 0.012      |
+-----------------------------------
+Saving periodic policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_20.pkl ...
+-------------------------------------------
+| epoch              | 21                 |
+| stats_g/mean       | 0.6748229          |
+| stats_g/std        | 0.017035177        |
+| stats_o/mean       | 0.30154696         |
+| stats_o/std        | 0.79410446         |
+| test/episode       | 440.0              |
+| test/mean_Q        | -9.744157          |
+| test/success_rate  | 0.6449999999999999 |
+| train/episode      | 2200.0             |
+| train/success_rate | 0.016              |
+-------------------------------------------
+---------------------------------------------
+| epoch              | 22                   |
+| stats_g/mean       | 0.67483354           |
+| stats_g/std        | 0.017036626          |
+| stats_o/mean       | 0.30141497           |
+| stats_o/std        | 0.79369              |
+| test/episode       | 460.0                |
+| test/mean_Q        | -8.630152            |
+| test/success_rate  | 0.74                 |
+| train/episode      | 2300.0               |
+| train/success_rate | 0.014000000000000002 |
+---------------------------------------------
+New best success rate: 0.74. Saving policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_best.pkl ...
+------------------------------------
+| epoch              | 23          |
+| stats_g/mean       | 0.6748148   |
+| stats_g/std        | 0.017039154 |
+| stats_o/mean       | 0.30130544  |
+| stats_o/std        | 0.7934886   |
+| test/episode       | 480.0       |
+| test/mean_Q        | -11.297485  |
+| test/success_rate  | 0.54        |
+| train/episode      | 2400.0      |
+| train/success_rate | 0.012       |
+------------------------------------
+-------------------------------------------
+| epoch              | 24                 |
+| stats_g/mean       | 0.6747986          |
+| stats_g/std        | 0.01701808         |
+| stats_o/mean       | 0.30111256         |
+| stats_o/std        | 0.7931342          |
+| test/episode       | 500.0              |
+| test/mean_Q        | -7.364774          |
+| test/success_rate  | 0.7949999999999999 |
+| train/episode      | 2500.0             |
+| train/success_rate | 0.011              |
+-------------------------------------------
+New best success rate: 0.7949999999999999. Saving policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_best.pkl ...
+---------------------------------------------
+| epoch              | 25                   |
+| stats_g/mean       | 0.67482305           |
+| stats_g/std        | 0.017021112          |
+| stats_o/mean       | 0.30099922           |
+| stats_o/std        | 0.7929486            |
+| test/episode       | 520.0                |
+| test/mean_Q        | -10.083018           |
+| test/success_rate  | 0.555                |
+| train/episode      | 2600.0               |
+| train/success_rate | 0.013000000000000001 |
+---------------------------------------------
+Saving periodic policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_25.pkl ...
+-------------------------------------------
+| epoch              | 26                 |
+| stats_g/mean       | 0.6748656          |
+| stats_g/std        | 0.017060228        |
+| stats_o/mean       | 0.30101943         |
+| stats_o/std        | 0.7926776          |
+| test/episode       | 540.0              |
+| test/mean_Q        | -9.527021          |
+| test/success_rate  | 0.6699999999999999 |
+| train/episode      | 2700.0             |
+| train/success_rate | 0.015              |
+-------------------------------------------
+------------------------------------
+| epoch              | 27          |
+| stats_g/mean       | 0.6749147   |
+| stats_g/std        | 0.017103994 |
+| stats_o/mean       | 0.3009893   |
+| stats_o/std        | 0.79265356  |
+| test/episode       | 560.0       |
+| test/mean_Q        | -12.666066  |
+| test/success_rate  | 0.595       |
+| train/episode      | 2800.0      |
+| train/success_rate | 0.01        |
+------------------------------------
+------------------------------------
+| epoch              | 28          |
+| stats_g/mean       | 0.6749623   |
+| stats_g/std        | 0.017137736 |
+| stats_o/mean       | 0.30098534  |
+| stats_o/std        | 0.792225    |
+| test/episode       | 580.0       |
+| test/mean_Q        | -12.002777  |
+| test/success_rate  | 0.71        |
+| train/episode      | 2900.0      |
+| train/success_rate | 0.012       |
+------------------------------------
+-------------------------------------------
+| epoch              | 29                 |
+| stats_g/mean       | 0.6749838          |
+| stats_g/std        | 0.017147351        |
+| stats_o/mean       | 0.3009413          |
+| stats_o/std        | 0.79183257         |
+| test/episode       | 600.0              |
+| test/mean_Q        | -11.212891         |
+| test/success_rate  | 0.7300000000000001 |
+| train/episode      | 3000.0             |
+| train/success_rate | 0.01               |
+-------------------------------------------
+------------------------------------
+| epoch              | 30          |
+| stats_g/mean       | 0.6750056   |
+| stats_g/std        | 0.017153364 |
+| stats_o/mean       | 0.30094472  |
+| stats_o/std        | 0.79156744  |
+| test/episode       | 620.0       |
+| test/mean_Q        | -10.193197  |
+| test/success_rate  | 0.735       |
+| train/episode      | 3100.0      |
+| train/success_rate | 0.015       |
+------------------------------------
+Saving periodic policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_30.pkl ...
+------------------------------------
+| epoch              | 31          |
+| stats_g/mean       | 0.675019    |
+| stats_g/std        | 0.017162483 |
+| stats_o/mean       | 0.3008663   |
+| stats_o/std        | 0.7912686   |
+| test/episode       | 640.0       |
+| test/mean_Q        | -12.1855755 |
+| test/success_rate  | 0.665       |
+| train/episode      | 3200.0      |
+| train/success_rate | 0.018       |
+------------------------------------
+------------------------------------
+| epoch              | 32          |
+| stats_g/mean       | 0.6750415   |
+| stats_g/std        | 0.017168853 |
+| stats_o/mean       | 0.3008595   |
+| stats_o/std        | 0.7909428   |
+| test/episode       | 660.0       |
+| test/mean_Q        | -12.373528  |
+| test/success_rate  | 0.695       |
+| train/episode      | 3300.0      |
+| train/success_rate | 0.011       |
+------------------------------------
+---------------------------------------------
+| epoch              | 33                   |
+| stats_g/mean       | 0.67507017           |
+| stats_g/std        | 0.017174358          |
+| stats_o/mean       | 0.30079207           |
+| stats_o/std        | 0.7909416            |
+| test/episode       | 680.0                |
+| test/mean_Q        | -11.703974           |
+| test/success_rate  | 0.73                 |
+| train/episode      | 3400.0               |
+| train/success_rate | 0.007000000000000001 |
+---------------------------------------------
+-------------------------------------------
+| epoch              | 34                 |
+| stats_g/mean       | 0.6750939          |
+| stats_g/std        | 0.017187735        |
+| stats_o/mean       | 0.30074945         |
+| stats_o/std        | 0.7908085          |
+| test/episode       | 700.0              |
+| test/mean_Q        | -11.915974         |
+| test/success_rate  | 0.6849999999999999 |
+| train/episode      | 3500.0             |
+| train/success_rate | 0.012              |
+-------------------------------------------
+---------------------------------------------
+| epoch              | 35                   |
+| stats_g/mean       | 0.675125             |
+| stats_g/std        | 0.01720031           |
+| stats_o/mean       | 0.3007416            |
+| stats_o/std        | 0.79056895           |
+| test/episode       | 720.0                |
+| test/mean_Q        | -14.564525           |
+| test/success_rate  | 0.6300000000000001   |
+| train/episode      | 3600.0               |
+| train/success_rate | 0.009000000000000001 |
+---------------------------------------------
+Saving periodic policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_35.pkl ...
+-------------------------------------------
+| epoch              | 36                 |
+| stats_g/mean       | 0.6751646          |
+| stats_g/std        | 0.017212518        |
+| stats_o/mean       | 0.30079794         |
+| stats_o/std        | 0.79044455         |
+| test/episode       | 740.0              |
+| test/mean_Q        | -13.734573         |
+| test/success_rate  | 0.7150000000000001 |
+| train/episode      | 3700.0             |
+| train/success_rate | 0.006              |
+-------------------------------------------
+-------------------------------------------
+| epoch              | 37                 |
+| stats_g/mean       | 0.6751912          |
+| stats_g/std        | 0.017227028        |
+| stats_o/mean       | 0.30073738         |
+| stats_o/std        | 0.79013956         |
+| test/episode       | 760.0              |
+| test/mean_Q        | -12.993622         |
+| test/success_rate  | 0.6549999999999999 |
+| train/episode      | 3800.0             |
+| train/success_rate | 0.012              |
+-------------------------------------------
+-----------------------------------
+| epoch              | 38         |
+| stats_g/mean       | 0.6752099  |
+| stats_g/std        | 0.01723507 |
+| stats_o/mean       | 0.3006763  |
+| stats_o/std        | 0.7900264  |
+| test/episode       | 780.0      |
+| test/mean_Q        | -13.5582   |
+| test/success_rate  | 0.72       |
+| train/episode      | 3900.0     |
+| train/success_rate | 0.016      |
+-----------------------------------
+---------------------------------------------
+| epoch              | 39                   |
+| stats_g/mean       | 0.675218             |
+| stats_g/std        | 0.017244687          |
+| stats_o/mean       | 0.30070788           |
+| stats_o/std        | 0.78989875           |
+| test/episode       | 800.0                |
+| test/mean_Q        | -14.970355           |
+| test/success_rate  | 0.62                 |
+| train/episode      | 4000.0               |
+| train/success_rate | 0.016999999999999998 |
+---------------------------------------------
+-------------------------------------------
+| epoch              | 40                 |
+| stats_g/mean       | 0.67522746         |
+| stats_g/std        | 0.017245585        |
+| stats_o/mean       | 0.30077758         |
+| stats_o/std        | 0.7897309          |
+| test/episode       | 820.0              |
+| test/mean_Q        | -12.9847975        |
+| test/success_rate  | 0.6799999999999999 |
+| train/episode      | 4100.0             |
+| train/success_rate | 0.01               |
+-------------------------------------------
+Saving periodic policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_40.pkl ...
+------------------------------------
+| epoch              | 41          |
+| stats_g/mean       | 0.67523944  |
+| stats_g/std        | 0.017252425 |
+| stats_o/mean       | 0.30077296  |
+| stats_o/std        | 0.7895595   |
+| test/episode       | 840.0       |
+| test/mean_Q        | -16.009617  |
+| test/success_rate  | 0.64        |
+| train/episode      | 4200.0      |
+| train/success_rate | 0.012       |
+------------------------------------
+------------------------------------
+| epoch              | 42          |
+| stats_g/mean       | 0.6752561   |
+| stats_g/std        | 0.017260233 |
+| stats_o/mean       | 0.30080333  |
+| stats_o/std        | 0.7895092   |
+| test/episode       | 860.0       |
+| test/mean_Q        | -12.4942875 |
+| test/success_rate  | 0.745       |
+| train/episode      | 4300.0      |
+| train/success_rate | 0.01        |
+------------------------------------
+-------------------------------------------
+| epoch              | 43                 |
+| stats_g/mean       | 0.6752738          |
+| stats_g/std        | 0.017261947        |
+| stats_o/mean       | 0.3008114          |
+| stats_o/std        | 0.78942764         |
+| test/episode       | 880.0              |
+| test/mean_Q        | -15.367543         |
+| test/success_rate  | 0.5900000000000001 |
+| train/episode      | 4400.0             |
+| train/success_rate | 0.018              |
+-------------------------------------------
+-----------------------------------
+| epoch              | 44         |
+| stats_g/mean       | 0.67528415 |
+| stats_g/std        | 0.01726092 |
+| stats_o/mean       | 0.3008371  |
+| stats_o/std        | 0.7892896  |
+| test/episode       | 900.0      |
+| test/mean_Q        | -14.760147 |
+| test/success_rate  | 0.58       |
+| train/episode      | 4500.0     |
+| train/success_rate | 0.009      |
+-----------------------------------
+---------------------------------------------
+| epoch              | 45                   |
+| stats_g/mean       | 0.6752955            |
+| stats_g/std        | 0.017266791          |
+| stats_o/mean       | 0.300847             |
+| stats_o/std        | 0.7891288            |
+| test/episode       | 920.0                |
+| test/mean_Q        | -13.861399           |
+| test/success_rate  | 0.7150000000000001   |
+| train/episode      | 4600.0               |
+| train/success_rate | 0.007000000000000001 |
+---------------------------------------------
+Saving periodic policy to HandReach-v0/cpu1ep50/alg=DDPG+CHER=/r1/policy_45.pkl ...
+---------------------------------------------
+| epoch              | 46                   |
+| stats_g/mean       | 0.6753185            |
+| stats_g/std        | 0.017273955          |
+| stats_o/mean       | 0.3008679            |
+| stats_o/std        | 0.7890023            |
+| test/episode       | 940.0                |
+| test/mean_Q        | -14.609302           |
+| test/success_rate  | 0.6900000000000001   |
+| train/episode      | 4700.0               |
+| train/success_rate | 0.009000000000000001 |
+---------------------------------------------
+-------------------------------------------
+| epoch              | 47                 |
+| stats_g/mean       | 0.67532986         |
+| stats_g/std        | 0.017277956        |
+| stats_o/mean       | 0.300865           |
+| stats_o/std        | 0.7889597          |
+| test/episode       | 960.0              |
+| test/mean_Q        | -13.963602         |
+| test/success_rate  | 0.7150000000000001 |
+| train/episode      | 4800.0             |
+| train/success_rate | 0.006              |
+-------------------------------------------
+-------------------------------------------
+| epoch              | 48                 |
+| stats_g/mean       | 0.67533076         |
+| stats_g/std        | 0.0172748          |
+| stats_o/mean       | 0.30087242         |
+| stats_o/std        | 0.7888006          |
+| test/episode       | 980.0              |
+| test/mean_Q        | -13.284622         |
+| test/success_rate  | 0.7050000000000001 |
+| train/episode      | 4900.0             |
+| train/success_rate | 0.01               |
+-------------------------------------------
+---------------------------------------------
+| epoch              | 49                   |
+| stats_g/mean       | 0.6753337            |
+| stats_g/std        | 0.017269123          |
+| stats_o/mean       | 0.30087298           |
+| stats_o/std        | 0.78865695           |
+| test/episode       | 1000.0               |
+| test/mean_Q        | -15.297427           |
+| test/success_rate  | 0.7050000000000001   |
+| train/episode      | 5000.0               |
+| train/success_rate | 0.007000000000000001 |
+---------------------------------------------
