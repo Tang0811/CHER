@@ -246,7 +246,7 @@ def make_sample_her_transitions(replay_strategy, replay_k, reward_fun):
         transitions = {key: episode_batch[key][episode_idxs, t_samples].copy()
                        for key in episode_batch.keys()}
 
-        her_indexes = np.where(np.random.uniform(size=batch_size) < future_p)  # 隨機取proximity比例的數量
+        her_indexes = np.where(np.random.uniform(size=batch_size) < future_p)  # 隨機取proximity比例的batch_size中的經驗
         future_offset = np.random.uniform(size=batch_size) * (T - t_samples)
         future_offset = future_offset.astype(int)
         future_t = (t_samples + 1 + future_offset)[her_indexes]
